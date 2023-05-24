@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: linear-gradient(135deg, rgba(159,159,159, 0.24) 0%, rgba(159,159,159, 0.24) 14.286%,rgba(165,165,165, 0.26) 14.286%, rgba(165,165,165, 0.26) 28.572%,rgba(171,171,171, 0.22) 28.572%, rgba(171,171,171, 0.22) 42.858%,rgba(178,178,178, 0.17) 42.858%, rgba(178,178,178, 0.17) 57.144%,rgba(184,184,184, 0.28) 57.144%, rgba(184,184,184, 0.28) 71.43%,rgba(190, 190, 190, 0.46) 71.43%, rgba(190, 190, 190, 0.46) 85.716%,rgba(196, 196, 196, 0.46) 85.716%, rgba(196, 196, 196, 0.46) 100.002%),linear-gradient(45deg, rgb(252, 252, 252) 0%, rgb(252, 252, 252) 14.286%,rgb(246, 246, 246) 14.286%, rgb(246, 246, 246) 28.572%,rgb(241, 241, 241) 28.572%, rgb(241, 241, 241) 42.858%,rgb(235, 235, 235) 42.858%, rgb(235, 235, 235) 57.144%,rgb(229, 229, 229) 57.144%, rgb(229, 229, 229) 71.43%,rgb(224, 224, 224) 71.43%, rgb(224, 224, 224) 85.716%,rgb(218, 218, 218) 85.716%, rgb(218, 218, 218) 100.002%);
+    
+}
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #3A86FF;
+    --shadow-color: #FFBE0B;
+}
+
+html {
+    font-size: 80%;
+    overflow-x: hidden;
+}
+
+
+/* ----------------------------------------NavBar------------------------------------------------------------- */
+.logo {
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.logo:hover {
+    box-shadow: 0 0 2rem var(--second-bg-color);
+}
+
+nav {
+    background: linear-gradient(to bottom right, #3A86FF, #FFBE0B);
+}
+
+nav a {
+    font-family: 'Nothing You Could Do';
+    font-weight: bold;
+
+}
+
+.navbar-nav {
+    font-size: 1.1rem;
+}
+
+/* -------------------------------------------Body------------------------------------------------------------- */
+/* -----------------Concept------------------- */
+.title {
+    font-family: 'Nothing You Could Do';
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    /* text-shadow:   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff,
+     1px 1px 10px #141414;color:#333; */
+
+}
+
+.titleh2 {
+    font-family: 'Nothing You Could Do';
+    color: var(--shadow-color);
+    text-shadow: 2px 0 0 var(--second-bg-color);
+    font-size: 2rem;
+}
+
+.fontText {
+    font-family: 'Nothing You Could Do';
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    /* text-shadow: 1px 0 0 var(--second-bg-color); */
+}
+
+.bold {
+    font-family: 'Nothing You Could Do';
+    font-weight: bold;
+    color: black;
+}
+
+
+.alignement {
+    text-align: center;
+    font-weight: 600;
+}
+
+.shadow {
+    background-image: url(../img/confetti.jpg);
+
+}
+
+/* ----------------Pourquoi ?------------------- */
+.titlePk {
+    font-family: 'Nothing You Could Do';
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* div .card-header {
+    background-color: var(--shadow-color);
+}
+
+.card-body{
+    background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165,0.06) 0%, rgba(165, 165, 165,0.06) 25%,rgba(193, 193, 193,0.06) 25%, rgba(193, 193, 193,0.06) 50%,rgba(221, 221, 221,0.06) 50%, rgba(221, 221, 221,0.06) 75%,rgba(249, 249, 249,0.06) 75%, rgba(249, 249, 249,0.06) 100%),radial-gradient(circle at 49% 76%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 25%,rgba(164, 164, 164,0.06) 25%, rgba(164, 164, 164,0.06) 50%,rgba(200, 200, 200,0.06) 50%, rgba(200, 200, 200,0.06) 75%,rgba(235, 235, 235,0.06) 75%, rgba(235, 235, 235,0.06) 100%),radial-gradient(circle at 22% 64%, rgba(173, 173, 173,0.06) 0%, rgba(173, 173, 173,0.06) 25%,rgba(119, 119, 119,0.06) 25%, rgba(119, 119, 119,0.06) 50%,rgba(64, 64, 64,0.06) 50%, rgba(64, 64, 64,0.06) 75%,rgba(10, 10, 10,0.06) 75%, rgba(10, 10, 10,0.06) 100%),linear-gradient(307deg, rgb(255,255,255),rgb(255,255,255));
+} */
+
+.card-text {
+    text-align: center;
+    font-family: 'Nothing You Could Do';
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.equipe{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1500px;
+    margin: 70px auto 0;
+    margin-top: 5%;
+    /* background: #625E55; */
+}
+.item1{
+    width: 300px;
+    height: 280px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* background-color: #3F3C37; */
+    border-radius: 50%;
+    background-color: #3A86FF;
+}
+
+.carteEquipe{
+    box-shadow: 2px 5px 2px black;
+    /* margin: 4px; */
+    border-radius: 100%;
+    /* color: #3A86FF; */
+    color: #1f242d;
+    /* background-color: #1f242d; */
+}
+
+figure{
+    /* width: 200px; */
+    transition: transform .1s;
+  }
+  
+  figure:hover{
+      -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.3); 
+  }
+.move1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .move1{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    transform: scale(0) ;
+    transition: 0.3s;
+    transform-origin: bottom;
+} */
+/* .card:hover .move1{
+    transform: scale(1);
+} */
+
+
+/* --------------Carousel----------------------- */
+
+.carou {
+    /* border: 1px solid black; */
+}
+
+/*------------------------------------------- Footer---------------------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.8rem 9%;
+    background: linear-gradient(to bottom right, #3A86FF, #FFBE0B);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--second-bg-color);
+    border-radius: 8rem;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--shadow-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--second-bg-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--second-bg-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    background: var(--shadow-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+
+
+/* -------------------------------------------Pages Catalogue---------------------------------------------------- */
+
+/* -----------------------------Section Produits-------------------- */
+
+.titleCatalogue{
+    font-family: 'Nothing You Could Do';
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+div ul{
+    /* font-family: 'Nothing You Could Do'; */
+    /* text-align: start; */
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.card-img-top{
+
+    height: 480px;
+}
