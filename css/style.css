@@ -39,14 +39,12 @@ html {
     box-shadow: 0 0 2rem var(--second-bg-color);
 }
 
-nav {
-    background: linear-gradient(to bottom right, #3A86FF, #FFBE0B);
-}
+
 
 nav a {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Bukhari Script';
     font-weight: bold;
-
+    color: var(--main-color);
 }
 
 .navbar-nav {
@@ -56,7 +54,7 @@ nav a {
 /* -------------------------------------------Body------------------------------------------------------------- */
 /* -----------------Concept------------------- */
 .title {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     text-align: center;
     font-size: 2.5rem;
     color: var(--main-color);
@@ -69,21 +67,21 @@ nav a {
 }
 
 .titleh2 {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     color: var(--shadow-color);
     text-shadow: 2px 0 0 var(--second-bg-color);
     font-size: 2rem;
 }
 
 .fontText {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     font-size: 1.6rem;
     color: var(--bg-color);
     /* text-shadow: 1px 0 0 var(--second-bg-color); */
 }
 
 .bold {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     font-weight: bold;
     color: black;
 }
@@ -101,7 +99,7 @@ nav a {
 
 /* ----------------Pourquoi ?------------------- */
 .titlePk {
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     text-align: center;
     color: var(--main-color);
 }
