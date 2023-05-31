@@ -9,6 +9,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -18,20 +19,20 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img class="logo ms-5 me-5" src="./img/logo3.png" alt="">
+            <img class="logo ms-5 me-4" src="./img/logo3.png" alt="">
 
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active ms-5" id="home" href="index.html">Accueil
+                        <a class="nav-link ms-5 me-5 active" id="home" href="index.html">Accueil
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/catalogue.html">Les jeux à la location</a>
+                        <a class="nav-link ms-5" href="./pages/catalogue.html">Les jeux à la location</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/louer.html">Comment louer ?</a>
+                        <a class="nav-link " href="./pages/louer.html">Comment louer ?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/contact.html">Contactez-nous</a>
@@ -39,31 +40,40 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/questions.html">Questions fréquentes</a>
                     </li>
-
+                    <!-- <li class="nav-item">
+                        <button type="button" id="dark-mode-toggle" class="btn btn-primary">Dark</button>
+                    </li> -->
                 </ul>
+                <!-- <button id="dark-mode-toggle">Activer le mode sombre</button> -->
+
             </div>
         </div>
     </nav>
 
-    <h1 class=" title container mt-5">Louer pour créer votre espace de jeux</h1>
-    <hr>
+    <!-- <h1 class="title container mt-5">Louer pour créer votre espace de jeux</h1> -->
+    <div  id="text">
+        <!-- Contenu généré par JavaScript -->
+    </div>
 
     <!-- Concept -->
-    <div class=" alignement container mt-5">
-
-        <div class="shadow p-4 mb-5 bg-body-tertiary rounded mt-4">
-            <h2 class="titleh2">Notre concept ?</h2>
-            <p class="mt-4 fontText">Vous proposez des jeux à la location pour animer vos événements. Anniversaire,
-                mariage, baptême, soirée
-                d'entreprise...</p>
-            <p class="fontText">Nous saurons vous conseiller pour trouver les jeux les plus adaptés à vos invités.</p>
-            <p class="fontText">N'hésitez pas à nous <a href="./pages/contact.html"><strong
-                        class="bold">contacter</strong></a> pour obtenir plus de renseignements ou pour
-                établir ensemble un devis.</p>
+    <div class="alignement container mt-2">
+        <div class="shadow p-4 mb-5 bg-body-tertiary rounded mt-4 d-flex">
+            <img class="imgVecteur order" src="./img/heureux-removebg-preview.png" alt="">
+            <div>
+                <h2 class="titleh2">Notre concept ?</h2>
+                <p class="mt-4 fontText">Vous proposez des jeux à la location pour animer vos événements. Anniversaire,
+                    mariage, baptême, soirée d'entreprise...</p>
+                <p class="fontText">Nous saurons vous conseiller pour trouver les jeux les plus adaptés à vos invités.
+                </p>
+                <p class="fontText">N'hésitez pas à nous <a href="./pages/contact.html"><strong
+                            class="bold">contacter</strong></a> pour obtenir plus de renseignements ou pour établir
+                    ensemble un devis.</p>
+            </div>
         </div>
-
     </div>
-    <hr>
+
+
+
     <!-- Pourquoi louer ? -->
 
     <h2 class="titlePk container mt-5">Pourquoi louer des jeux pour un événement ?</h2>
@@ -73,34 +83,34 @@
         <div class="equipe">
 
             <figure class="card carteEquipe">
-                <div class="item1"> 
-                        <div class="card-img-overlay move1">
-                            <p class="card-text">Proposer à vos invités de passer un moment convivial.</p>
-                        </div>
+                <div class="item1">
+                    <div class="card-img-overlay move1">
+                        <p class="card-text">Proposer à vos invités de passer un moment convivial.</p>
+                    </div>
                 </div>
             </figure>
 
 
             <figure class="card carteEquipe">
                 <div class="item1">
-                        <div class="card-img-overlay move1">
-                            <p class="card-text">Permettre les échanges et les rencontres entre vos convives</p>
-                        </div>
+                    <div class="card-img-overlay move1">
+                        <p class="card-text">Permettre les échanges et les rencontres entre vos convives</p>
                     </div>
+                </div>
             </figure>
 
             <figure class="card carteEquipe">
                 <div class="item1">
-                        <div class="card-img-overlay move1">
-                            <p class="card-text">Faire des économies : <br>
-                                La location est aujourd'hui une belle alternative économique à l'achat.</p>
-                        </div>
+                    <div class="card-img-overlay move1">
+                        <p class="card-text">Faire des économies : <br>
+                            La location est aujourd'hui une belle alternative économique à l'achat.</p>
                     </div>
+                </div>
             </figure>
 
         </div>
     </section>
-   
+
     <!-- Carousel -->
 
     <div class="carou container d-flex justify-content-center mt-5">
@@ -131,6 +141,7 @@
         </div>
     </div>
 
+    <hr>
 
     <footer class="mt-4">
         <div class="social-media">
@@ -147,6 +158,11 @@
         </div>
 
     </footer>
-</body>
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</body>
 </html>

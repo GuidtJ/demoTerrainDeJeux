@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: linear-gradient(135deg, rgba(159,159,159, 0.24) 0%, rgba(159,159,159, 0.24) 14.286%,rgba(165,165,165, 0.26) 14.286%, rgba(165,165,165, 0.26) 28.572%,rgba(171,171,171, 0.22) 28.572%, rgba(171,171,171, 0.22) 42.858%,rgba(178,178,178, 0.17) 42.858%, rgba(178,178,178, 0.17) 57.144%,rgba(184,184,184, 0.28) 57.144%, rgba(184,184,184, 0.28) 71.43%,rgba(190, 190, 190, 0.46) 71.43%, rgba(190, 190, 190, 0.46) 85.716%,rgba(196, 196, 196, 0.46) 85.716%, rgba(196, 196, 196, 0.46) 100.002%),linear-gradient(45deg, rgb(252, 252, 252) 0%, rgb(252, 252, 252) 14.286%,rgb(246, 246, 246) 14.286%, rgb(246, 246, 246) 28.572%,rgb(241, 241, 241) 28.572%, rgb(241, 241, 241) 42.858%,rgb(235, 235, 235) 42.858%, rgb(235, 235, 235) 57.144%,rgb(229, 229, 229) 57.144%, rgb(229, 229, 229) 71.43%,rgb(224, 224, 224) 71.43%, rgb(224, 224, 224) 85.716%,rgb(218, 218, 218) 85.716%, rgb(218, 218, 218) 100.002%);
+    background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
     
 }
 :root {
@@ -30,26 +30,41 @@ html {
 /* ----------------------------------------NavBar------------------------------------------------------------- */
 .logo {
     width: 120px;
-    border-radius: 20px;
-    border: 1px solid var(--bg-color);
+    /* border-radius: 20px; */
+    /* border: 1px solid var(--bg-color); */
     transition: .5s ease;
 }
 
 .logo:hover {
-    box-shadow: 0 0 2rem var(--second-bg-color);
+    box-shadow: 0 0 2rem var(--main-color);
 }
-
-
 
 nav a {
-    font-family: 'Bukhari Script';
-    font-weight: bold;
-    color: var(--main-color);
+    font-family: 'Dancing Script Medium';
+    
 }
+.navbar-nav .nav-item .nav-link {
+    color:var(--main-color);
+    font-size: 16px;
+
+}
+
 
 .navbar-nav {
     font-size: 1.1rem;
 }
+
+/* Dark Mode */
+/* body {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+  } */
+  
 
 /* -------------------------------------------Body------------------------------------------------------------- */
 /* -----------------Concept------------------- */
@@ -57,7 +72,7 @@ nav a {
     font-family: 'Hanken Grotesk Medium';
     text-align: center;
     font-size: 2.5rem;
-    color: var(--main-color);
+    /* color: var(--main-color); */
     /* text-shadow:   -1px -1px 0 #fff,  
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
@@ -66,17 +81,92 @@ nav a {
 
 }
 
+
+/* test1-------------------------------------------------------------- */
+:root {
+    --background: #efefef;
+    --primary-font: 'Hanken Grotesk Medium';
+    --first-color: var(--bg-color);
+    --second-color: var(--main-color);
+  }
+  
+  .title {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  #text {
+    font-family: var(--primary-font);
+    font-size: 6em;
+    line-height: 1em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: default;
+    margin-top: 80px;
+  }
+  
+  .wrapper {
+    display: inline-block;
+    top: -900px;
+    position: relative;
+    height: 150px; /* par défaut */
+    width: 90px; /* par défaut */
+    transition: ease 0.3s all;
+  }
+  
+  .wrapper span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: ease 0.3s all;
+  }
+  
+  .wrapper span.letter-2 {
+    color: var(--first-color);
+  }
+  
+  .wrapper span.letter-1 {
+    color: var(--second-color);
+    z-index: 1;
+  }
+  
+  .wrapper span.letter-1:hover {
+    top: -3px;
+    right: -3px;
+  }
+  
+  .wrapper span.letter-1:hover ~ .letter-2 {
+    top: 3px;
+    right: 3px;
+  }
+  
+  .wrapper span.space {
+    padding: 0;
+    min-width: 30px;
+    display: inline-block;
+  }
+  
+/* test1------------------------------------------------------------ */
+
+/* test2------------------------------------------------------------------ */
+
+
+/* test2-------------------------------------------------------------------- */
 .titleh2 {
     font-family: 'Hanken Grotesk Medium';
     color: var(--shadow-color);
     text-shadow: 2px 0 0 var(--second-bg-color);
     font-size: 2rem;
+    text-align: center;
 }
 
 .fontText {
     font-family: 'Hanken Grotesk Medium';
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     /* text-shadow: 1px 0 0 var(--second-bg-color); */
 }
 
@@ -88,13 +178,19 @@ nav a {
 
 
 .alignement {
-    text-align: center;
+    /* text-align: center; */
     font-weight: 600;
+    
 }
 
 .shadow {
-    background-image: url(../img/confetti.jpg);
+    /* background-image: url(../img/confetti.jpg); */
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    
+}
 
+.imgVecteur{
+    width: 30%;
 }
 
 /* ----------------Pourquoi ?------------------- */
@@ -114,7 +210,7 @@ nav a {
 
 .card-text {
     text-align: center;
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     font-size: 1.5rem;
     font-weight: bold;
     
@@ -133,7 +229,7 @@ nav a {
 .item1{
     width: 300px;
     height: 280px;
-    margin: 10px;
+    margin: 8px;
     overflow: hidden;
     flex-shrink: 0;
     /* background-color: #3F3C37; */
@@ -142,16 +238,15 @@ nav a {
 }
 
 .carteEquipe{
-    box-shadow: 2px 5px 2px black;
+    /* box-shadow: 2px 5px 2px black; */
     /* margin: 4px; */
     border-radius: 100%;
     /* color: #3A86FF; */
-    color: #1f242d;
+    color: var(--text-color);
     /* background-color: #1f242d; */
 }
 
 figure{
-    /* width: 200px; */
     transition: transform .1s;
   }
   
@@ -195,7 +290,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.8rem 9%;
-    background: linear-gradient(to bottom right, #3A86FF, #FFBE0B);
+    
 }
 
 .footer-text p {
@@ -251,8 +346,12 @@ footer {
 
 /* -----------------------------Section Produits-------------------- */
 
+.fontText{
+    text-align: center;
+}
+
 .titleCatalogue{
-    font-family: 'Nothing You Could Do';
+    font-family: 'Hanken Grotesk Medium';
     font-size: 1.8rem;
     text-align: center;
     color: var(--main-color);
