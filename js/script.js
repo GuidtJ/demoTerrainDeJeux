@@ -50,7 +50,7 @@ outputLayers.then(() => {
   // Ensuite, faites glisser les lettres une par une dans la vue
   let time = 250;
   return spans.map((span) => {
-    time += 75;
+    time += 15;
     setTimeout(() => {
       span.parentElement.style.top = '0px';
     }, time);
@@ -69,3 +69,39 @@ function toggleDarkMode() {
 const toggleButton = document.getElementById('dark-mode-toggle');
 toggleButton.addEventListener('click', toggleDarkMode);
 
+// Pagination----------------------------------------------------------------------------
+
+// Récupérer les éléments de pagination
+// const paginationItems = document.querySelectorAll('.pagination .page-item');
+
+// // Ajouter un gestionnaire d'événement au clic sur les liens de pagination
+// paginationItems.forEach(item => {
+//   item.addEventListener('click', (event) => {
+//     // Empêcher le comportement par défaut du lien
+//     event.preventDefault();
+
+//     // Vérifier si le lien cliqué est actif
+//     if (!item.classList.contains('active')) {
+//       // Supprimer la classe "active" de tous les liens de pagination
+//       paginationItems.forEach(item => item.classList.remove('active'));
+
+//       // Ajouter la classe "active" au lien cliqué
+//       item.classList.add('active');
+
+//       // Récupérer l'index du lien cliqué
+//       const clickedIndex = Array.from(paginationItems).indexOf(item);
+
+//       // Parcourir tous les liens de pagination
+//       paginationItems.forEach((item, index) => {
+//         // Vérifier si l'index du lien est inférieur à l'index du lien cliqué
+//         if (index < clickedIndex) {
+//           // Ajouter la classe "disabled" aux liens précédents
+//           item.classList.add('disabled');
+//         } else {
+//           // Supprimer la classe "disabled" des liens suivants
+//           item.classList.remove('disabled');
+//         }
+//       });
+//     }
+//   });
+// });
