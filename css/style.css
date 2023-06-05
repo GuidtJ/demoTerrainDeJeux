@@ -355,6 +355,15 @@ footer {
     height: 490px;
 }
 
+#blue{
+    color: #3A86FF;
+}
+
+h5{
+    font-family: 'Hanken Grotesk Medium';
+    
+}
+
 #btn {
     font-family: 'Hanken Grotesk Medium';
 
@@ -583,7 +592,6 @@ footer {
 
 .font {
     font-family: 'Hanken Grotesk Medium';
-
     color: #3A86FF;
 }
 
@@ -616,3 +624,4 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
