@@ -78,6 +78,10 @@ nav a {
 
 }
 
+/* a .bold{
+    color: #FFBE0B;
+    text-decoration: none;
+} */
 
 /* test1-------------------------------------------------------------- */
 :root {
@@ -199,14 +203,6 @@ nav a {
     color: var(--main-color);
 }
 
-/* div .card-header {
-    background-color: var(--shadow-color);
-}
-
-.card-body{
-    background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165,0.06) 0%, rgba(165, 165, 165,0.06) 25%,rgba(193, 193, 193,0.06) 25%, rgba(193, 193, 193,0.06) 50%,rgba(221, 221, 221,0.06) 50%, rgba(221, 221, 221,0.06) 75%,rgba(249, 249, 249,0.06) 75%, rgba(249, 249, 249,0.06) 100%),radial-gradient(circle at 49% 76%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 25%,rgba(164, 164, 164,0.06) 25%, rgba(164, 164, 164,0.06) 50%,rgba(200, 200, 200,0.06) 50%, rgba(200, 200, 200,0.06) 75%,rgba(235, 235, 235,0.06) 75%, rgba(235, 235, 235,0.06) 100%),radial-gradient(circle at 22% 64%, rgba(173, 173, 173,0.06) 0%, rgba(173, 173, 173,0.06) 25%,rgba(119, 119, 119,0.06) 25%, rgba(119, 119, 119,0.06) 50%,rgba(64, 64, 64,0.06) 50%, rgba(64, 64, 64,0.06) 75%,rgba(10, 10, 10,0.06) 75%, rgba(10, 10, 10,0.06) 100%),linear-gradient(307deg, rgb(255,255,255),rgb(255,255,255));
-} */
-
 .card-text {
     text-align: center;
     font-family: 'Hanken Grotesk Medium';
@@ -223,7 +219,6 @@ nav a {
     max-width: 1500px;
     margin: 70px auto 0;
     margin-top: 5%;
-    /* background: #625E55; */
 }
 
 .item1 {
@@ -232,18 +227,13 @@ nav a {
     margin: 8px;
     overflow: hidden;
     flex-shrink: 0;
-    /* background-color: #3F3C37; */
     border-radius: 50%;
     background-color: #3A86FF;
 }
 
 .carteEquipe {
-    /* box-shadow: 2px 5px 2px black; */
-    /* margin: 4px; */
     border-radius: 100%;
-    /* color: #3A86FF; */
     color: var(--text-color);
-    /* background-color: #1f242d; */
 }
 
 figure {
@@ -361,87 +351,222 @@ footer {
     color: var(--main-color);
 }
 
-/* .card {
-    overflow: hidden;
-  }
-  
-  .card-img-top {
-    height: 480px;
-    width: 200px;
-    transition: transform .1s;
-  }
-  
-  .card-img-top:hover {
-    transform: scale(1.06);
-    transform-origin: center center;
-  } */
-  
-/* Shine */
-.card {
-    overflow: hidden;
-}
-
 .card-img-top {
     height: 490px;
-}
-
-.shine-effect {
-    position: absolute;
-    top: 0;
-    left: -75%;
-    z-index: 2;
-    display: block;
-    content: '';
-    width: 45%;
-    height: 100%;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-    -webkit-transform: skewX(-25deg);
-    transform: skewX(-25deg);
-    opacity: 0;
-    transition: opacity .3s;
-}
-
-.card-img-top:hover .shine-effect {
-    opacity: 1;
-    -webkit-animation: shine .85s;
-    animation: shine .85s;
-}
-
-@-webkit-keyframes shine {
-    100% {
-        left: 125%;
-    }
-}
-
-@keyframes shine {
-    100% {
-        left: 125%;
-    }
-}
-
-
-
-
-
-#blue {
-    color: #3A86FF;
-    font-family: 'Hanken Grotesk Medium';
-}
-
-#size {
-    justify-content: center;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 15px;
-    font-family: 'Hanken Grotesk Medium';
-    background-color: green;
 }
 
 #btn {
     font-family: 'Hanken Grotesk Medium';
 
+}
+
+/* Transition chamboule-tout */
+#carte1 a {
+    display: inline-block;
+    background: url("../img/Chamboule tout/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte1 a:hover img {
+    opacity: 0;
+}
+
+#carte1 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition puissance 4 */
+#carte2 a {
+    display: inline-block;
+    background: url("../img/Puissance 4/2.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte2 a:hover img {
+    opacity: 0;
+}
+
+#carte2 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition lancer d'anneaux */
+#carte3 a {
+    display: inline-block;
+    background: url("../img/Lancer d'anneaux/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte3 a:hover img {
+    opacity: 0;
+}
+
+#carte3 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition pêche aux canards */
+#carte4 a {
+    display: inline-block;
+    background: url("../img/Pêche aux canards/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte4 a:hover img {
+    opacity: 0;
+}
+
+#carte4 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition Morpion */
+#carte5 a {
+    display: inline-block;
+    background: url("../img/Morpion/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte5 a:hover img {
+    opacity: 0;
+}
+
+#carte5 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition Mikado */
+#carte6 a {
+    display: inline-block;
+    background: url("../img/Mikado géant/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte6 a:hover img {
+    opacity: 0;
+}
+
+#carte6 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition fer à cheval */
+#carte7 a {
+    display: inline-block;
+    background: url("../img/Fer à cheval/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte7 a:hover img {
+    opacity: 0;
+}
+
+#carte7 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition frisbee */
+#carte8 a {
+    display: inline-block;
+    background: url("../img/Cible à frisbee/2.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte8 a:hover img {
+    opacity: 0;
+}
+
+#carte8 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition cornhole */
+#carte9 a {
+    display: inline-block;
+    background: url("../img/Cornhole/2.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte9 a:hover img {
+    opacity: 0;
+}
+
+#carte9 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition mölkky */
+#carte10 a {
+    display: inline-block;
+    background: url("../img/Molkky/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte10 a:hover img {
+    opacity: 0;
+}
+
+#carte10 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Transition beer-pong */
+#carte11 a {
+    display: inline-block;
+    background: url("../img/Beer pong/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte11 a:hover img {
+    opacity: 0;
+}
+
+#carte11 a,
+#menu img {
+    width: 100%;
+    height: 100%;
 }
 
 /* --------------------------------------------------Pages Chamboule-tout---------------------------------------------------------------------------- */
@@ -469,4 +594,25 @@ footer {
 
 #bordure {
     border-radius: 50%;
+}
+
+/* ---------------------------------------------ZOOM SUR Image */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
