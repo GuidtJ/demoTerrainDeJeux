@@ -9,12 +9,12 @@ function Catalogue() {
       image: "/img/ChambouleTout/1.JPG",
       lien: "/jeux/chamboule-tout"
     },
-    // {
-    //   nom: "Puissance 4",
-    //   prix: "20€",
-    //   image: "/img/Puissance 4/1.JPG",
-    //   lien: "../jeux/puissance4.html"
-    // },
+    {
+      nom: "Puissance 4",
+      prix: "20€",
+      image: "/img/Puissance 4/1.JPG",
+      lien: "/jeux/puissance4"
+    },
     // {
     //   nom: "Lancer d'anneaux",
     //   prix: "8€",
