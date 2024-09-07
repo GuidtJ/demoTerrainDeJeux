@@ -1,0 +1,18 @@
+/* Transition chamboule-tout */
+#carte1 a {
+    display: inline-block;
+    background: url("/img/ChambouleTout/3.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+#carte1 a:hover img {
+    opacity: 0;
+}
+
+#carte1 a,
+#menu img {
+    width: 100%;
+    height: 100%;
+}
